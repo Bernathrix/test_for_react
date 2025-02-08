@@ -28,30 +28,34 @@
       <form name="calculator">
         <input id="display" type="text" name="display" readonly>
 
-        <input class="button digits" type="button" value="7">
-        <input class="button digits" type="button" value="8">
-        <input class="button digits" type="button" value="9">
-        <input class="button mathButtons" type="button" value="+">
+        <input class="button digits" type="button" value="7" onclick="on_click_digit('7')">
+        <input class="button digits" type="button" value="8" onclick="on_click_digit('8')">
+        <input class="button digits" type="button" value="9" onclick="on_click_digit('9')">
+        <input class="button mathButtons" type="button" value="+" onclick="on_click_digit('+')">
         <br />
-        <input class="button digits" type="button" value="4">
-        <input class="button digits" type="button" value="5">
-        <input class="button digits" type="button" value="6">
-        <input class="button mathButtons" type="button" value="-">
+        <input class="button digits" type="button" value="4" onclick="on_click_digit('4')">
+        <input class="button digits" type="button" value="5" onclick="on_click_digit('5')">
+        <input class="button digits" type="button" value="6" onclick="on_click_digit('6')">
+        <input class="button mathButtons" type="button" value="-" onclick="on_click_digit('-')">
         <br />
-        <input class="button digits" type="button" value="1">
-        <input class="button digits" type="button" value="2">
-        <input class="button digits" type="button" value="3">
-        <input class="button mathButtons" type="button" value="x">
+        <input class="button digits" type="button" value="1" onclick="on_click_digit('1')">
+        <input class="button digits" type="button" value="2" onclick="on_click_digit('2')">
+        <input class="button digits" type="button" value="3" onclick="on_click_digit('3')">
+        <input class="button mathButtons" type="button" value="x" onclick="on_click_digit('x')">
         <br />
-        <input id="clearButton" class="button" type="button" value="C">
-        <input class="button digits" type="button" value="0">
+        <input id="clearButton" class="button" type="button" value="C" onclick="on_click_digit('clear')">
+        <input class="button digits" type="button" value="0" onclick="on_click_digit('0')">
         <input class="button mathButtons" type="button" value="=">
-        <input class="button mathButtons" type="button" value="/">
+        <input class="button mathButtons" type="button" value="/" onclick="on_click_digit('/')">
+        <br />
+        <input id="clearButton1" class="button" type="button"  value="<=" onclick="on_click_digit('<=')">
+        <input class="button mathButtons" type="button" value="^" onclick="on_click_digit('^')">
+        <input class="button mathButtons" type="button" value="(" onclick="on_click_digit('(')">
+        <input class="button mathButtons" type="button" value=")" onclick="on_click_digit(')')">
       </form>
     </fieldset>
   </div>
   <script src="js/app.js"></script>
-
 </body>
 
 </html>

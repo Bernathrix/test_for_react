@@ -13,7 +13,7 @@ body {
 
 #container {
   width: 276px;
-  height: 360px;
+  height: 420px;
   padding: 8px 8px 20px 8px;
   margin: 20px auto;
   background-color: #494747;
@@ -52,4 +52,62 @@ body {
   font-size: 30px;
   font-weight: bold;
   border-radius: 2px;
+}
+
+.mathButtons {
+  margin: 2px 2px 6px 2px;
+  color: #FFF;
+  text-shadow: -1px -1px 0px #44006F;
+  background-color: #434343;
+  border-top: 2px solid #C1C1C1;
+  border-right: 2px solid #C1C1C1;
+  border-bottom: 2px solid #181818;
+  border-left: 2px solid #181818;
+  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #2E2E2E;
+}
+
+.digits {
+  color: #181818;
+  text-shadow: 1px 1px 0px #FFF;
+  background-color: #EBEBEB;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  border-bottom: 2px solid #C1C1C1;
+  border-left: 2px solid #C1C1C1;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #DCDCDC;
+}
+
+#clearButton {
+  color: #FFF;
+  text-shadow: -1px -1px 0px #44006F;
+  background-color: #515151;
+  border-top: 2px solid #878686;
+  border-right: 2px solid #878686;
+  border-bottom: 2px solid #3c3939;
+  border-left: 2px solid #3c3939;
+  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #5c5c5c;
+}
+
+#clearButton1 {
+  color: #FFF;
+  text-shadow: -1px -1px 0px #44006F;
+  background-color: #515151;
+  border-top: 2px solid #878686;
+  border-right: 2px solid #878686;
+  border-bottom: 2px solid #3c3939;
+  border-left: 2px solid #3c3939;
+  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #5c5c5c;
+}
+
+.digits:hover,
+.mathButtons:hover,
+#clearButton:hover,
+#clearButton1:hover{
+  background-color: #787676;
+  box-shadow: 0px 0px 2px #7a7671, inset 0px -20px 1px #686561;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  border-bottom: 2px solid #000000;
+  border-left: 2px solid #000000;
 }
