@@ -1,5 +1,17 @@
 let test = document.getElementById("display");
 
+function check_on_double_point(value){
+  let stop_signal = false
+  for (let i=0;i<value.length;i++){
+    if (value[i] == "."){
+      stop_signal = true;
+    } else if (value[i] == "-" || value[i] == "x" || value[i] == "+" || value[i] == "(" || value[i] == "^" || value[i] == ")" || value[i] == "/") {
+      stop_signal = false;
+    }
+  }
+  return !stop_signal;
+}
+
 function test_on_skobk(value){
   let opened_skobk = 0
   for (let i=0;i<value.length;i++){
@@ -116,7 +128,11 @@ function on_click_digit(num){
       }else if (val.slice(-1) == "/" || val.slice(-1) == "-" || val.slice(-1) == "x" || val.slice(-1) == "+" || val.slice(-1) == "(" || val.slice(-1) == "^" || val.slice(-1) == ".") {
         return;
       }else{
-          test.value += ".";}
+        if(check_on_double_point(val)){
+          test.value += ".";} else {
+        return;
+        }
+      }
       break;
 
     case "(":
